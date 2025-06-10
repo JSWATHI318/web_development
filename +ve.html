@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Checker</title>
+</head>
+<body>
+  <h2>Check Result:</h2>
+  <p id="result"></p>
+
+  <script>
+    // Get number using prompt popup
+    let number = parseFloat(prompt("Enter a number:"));
+    let message = "";
+
+    // Check the number using if-else
+    if (isNaN(number)) {
+      message = "Please enter a valid number.";
+    } else if (number > 0) {
+      message = "The number is positive.";
+    } else if (number < 0) {
+      message = "The number is negative.";
+    } else {
+      message = "The number is zero.";
+    }
+
+    // Show result on the page
+    document.getElementById("result").textContent = message;
+  </script>
+</body>
+</html>

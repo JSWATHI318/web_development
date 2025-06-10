@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Events Example</title>
+  <script>
+    // onload
+    window.onload = function() {
+      alert("Page loaded!");
+    };
+
+    // onclick
+    function showMessage() {
+      alert("Button clicked!");
+    }
+
+    // onblur
+    function lostFocus() {
+      alert("You left the input field!");
+    }
+
+    // onsubmit
+    function submitForm() {
+      alert("Form submitted!");
+      return false; // prevent actual form submission
+    }
+  </script>
+</head>
+<body>
+
+  <h2>JS Event Example</h2>
+
+  <!-- onsubmit -->
+  <form onsubmit="return submitForm()">
+    Name: <input type="text" onblur="lostFocus()"><br><br>
+    <input type="submit" value="Submit Form">
+  </form>
+
+  <br>
+
+  <!-- onclick -->
+  <button onclick="showMessage()">Click Me</button>
+
+</body>
+</html>

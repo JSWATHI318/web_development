@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript  Variables Example</title>
+</head>
+<body>
+
+<h2>Output:</h2>
+
+<script>
+    document.write("var Example:<br>");
+    var x = 10;
+    if (true) {
+        var x = 20;
+        document.write("Inside if: " + x + "<br>");
+    }
+    document.write("Outside if: " + x + "<br><br>");
+
+    document.write("let Example:<br>");
+    let y = 10;
+    if (true) {
+        let y = 20;
+        document.write("Inside if: " + y + "<br>");
+    }
+    document.write("Outside if: " + y + "<br><br>");
+
+    document.write("const Example:<br>");
+    const z = 30;
+    if (true) {
+        const z = 40;
+        document.write("Inside if: " + z + "<br>");
+    }
+    document.write("Outside if: " + z + "<br><br>");
+
+    document.write("const Object Example:<br>");
+    const obj = { name: "Riya" };
+    obj.name = "Be The Difference";
+    document.write("Object name: " + obj.name + "<br>");
+</script>
+
+</body>
+</html>

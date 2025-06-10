@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primitive Data Types</title>
+</head>
+<body>
+  <h2>Primitive Data Types and Their Types</h2>
+  <p id="output"></p>
+
+  <script>
+    // Declare primitive data types
+    let name = "Alice";               // String
+    let age = 25;                     // Number
+    let isStudent = true;             // Boolean
+    let x;                            // Undefined
+    let empty = null;                 // Null
+    let bigNum = 1234567890123456789n; // BigInt
+    let id = Symbol("id");            // Symbol
+
+    // Create output text
+    let result = 
+      "name (String): " + typeof name + "<br>" +
+      "age (Number): " + typeof age + "<br>" +
+      "isStudent (Boolean): " + typeof isStudent + "<br>" +
+      "x (Undefined): " + typeof x + "<br>" +
+      "empty (Null): " + typeof empty + "<br>" +
+      "bigNum (BigInt): " + typeof bigNum + "<br>" +
+      "id (Symbol): " + typeof id;
+
+    // Show result on web page
+    document.getElementById("output").innerHTML = result;
+
+    // Also log to console
+    console.log("name:", typeof name);
+    console.log("age:", typeof age);
+    console.log("isStudent:", typeof isStudent);
+    console.log("x:", typeof x);
+    console.log("empty:", typeof empty);
+    console.log("bigNum:", typeof bigNum);
+    console.log("id:", typeof id);
+  </script>
+</body>
+</html>

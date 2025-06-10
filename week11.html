@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squares and Cubes Table</title>
+</head>
+<body>
+
+    <h2>Squares and Cubes of Numbers (0 to 10)</h2>
+    <table border="1">
+        <tr>
+            <th>Number</th>
+            <th>Square</th>
+            <th>Cube</th>
+        </tr>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <script>
+        let tableBody = document.getElementById("table-body");
+
+        for (let i = 0; i <= 10; i++) {
+            let row = "<tr><td>" + i + "</td><td>" + (i * i) + "</td><td>" + (i * i * i) + "</td></tr>";
+            tableBody.innerHTML += row;
+        }
+    </script>
+
+</body>
+</html>

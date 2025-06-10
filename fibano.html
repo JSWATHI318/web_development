@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function fibonacci() {
+    var n = prompt("Enter how many numbers you want:");
+    var a = 0, b = 1, next, i;
+    document.write("Fibonacci Series: " + a + ", " + b);
+
+    for(i = 2; i < n; i++) {
+        next = a + b;
+        document.write(", " + next);
+        a = b;
+        b = next;
+    }
+}
+</script>
+
+<form>
+    <input type="button" value="Fibonacci" onclick="fibonacci();">
+</form>
+
+</body>
+</html>

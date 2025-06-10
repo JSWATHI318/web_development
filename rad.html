@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+        
+        <label>Mobile Number:</label>
+        <input type="tel" name="mobile" required><br><br>
+        
+        <label>Address:</label>
+        <textarea name="address" required></textarea><br><br>
+        
+        <label>Gender:</label>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label>Department:</label>
+        <input type="radio" name="department" value="CSE"> CSE
+        <input type="radio" name="department" value="ECE"> ECE
+        <input type="radio" name="department" value="ME"> ME<br><br>
+        
+        <label>Programs to Participate:</label><br>
+        <input type="checkbox" name="program" value="coding"> Coding Competition<br>
+        <input type="checkbox" name="program" value="debate"> Debate Competition<br>
+        <input type="checkbox" name="program" value="sports"> Sports Event<br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positive, Negative, Zero Count</title>
+</head>
+<body>
+
+  <script>
+    var n = prompt("Enter how many numbers:");
+    var Spos = 0;
+    var Sneg = 0;
+    var countZero = 0;
+
+    for (var i = 0; i < n; i++) {
+      var num = prompt("Enter number:");
+      num = Number(num);
+
+      if (num > 0) {
+        Spos = Spos + num;
+      } else if (num < 0) {
+        Sneg = Sneg + num;
+      } else {
+        countZero = countZero + 1;
+      }
+    }
+
+    document.write("Sum of Positive Numbers: " + Spos + "<br>");
+    document.write("Sum of Negative Numbers: " + Sneg + "<br>");
+    document.write("Count of Zeros: " + countZero);
+  </script>
+
+</body>
+</html>

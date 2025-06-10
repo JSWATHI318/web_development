@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="salutation">Salutation:</label>
+            <select name="salutation" id="salutation">
+                <option>-- none --</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+            </select>
+
+            <br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+
+            <br><br>
+
+            <p>Select the Intermediate Branch:</p>
+
+            <label for="bipc">BiPC</label>
+            <input type="radio" id="bipc" name="inter" value="bipc">
+
+            <label for="mpc">MPC</label>
+            <input type="radio" id="mpc" name="inter" value="mpc">
+
+            <br><br>
+
+            <p>Courses Offered</p>
+            <label for="cs">B.Sc Computer Science</label>
+            <input type="radio" id="cs" name="course" value="cs">
+            
+            <label for="ds">B.Sc Data Science</label>
+            <input type="radio" id="ds" name="course" value="ds">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br><br>
+
+            <label for="pass">Create Password:</label>
+            <input type="password" id="pass" name="password">
+
+            <br><br>
+
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" id="birth-date" name="birth-date">
+
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" cols="30" rows="3"></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
